@@ -1,0 +1,297 @@
+@import "reset.css" ;
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/vazir.eot?#iefix') format('embedded-opentype'),
+     url('fonts//vazir.woff2') format('woff2'),
+     url('fonts//vazir.woff') format('woff'),
+     url('fonts//vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+body , input, button {
+    font-family: vazirnormal;
+}
+
+
+body{
+    
+    direction: rtl;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.clearfix{
+    clear: both;
+
+}
+
+
+ /* #header */
+ #header {
+    width: 100%;
+    height: 600px;
+    background: rgb(4,7,80);
+    background: linear-gradient(232deg, rgba(4,7,80,1) 27%, rgba(250,197,0,1) 100%);
+    border-radius: 5px;
+ }
+#header .logo{
+    padding-top: 10px;
+    float: right;
+    
+}
+#header .logo img{
+    width: 125px;
+}
+
+
+/* #nav */
+
+#nav{
+    float: left;
+    padding-top: 30px;
+}
+#nav ul li{
+    display: inline-block;
+    font-size: 18px;
+    
+}
+#nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: 0.25s;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+#nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.25s;
+
+}
+#nav svg{
+    margin-left: 5px;
+    font-size: 16px;
+}
+/*section */
+#subscribe {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+#subscribe .header-image{
+    width: 450px;
+    border-radius: 10px;
+}
+
+#subscribe .title{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    
+}
+#subscribe .tolid{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+#subscribe .tolid:hover{
+    color: rgb(4, 4, 58);
+}
+.form .email{
+    padding:10px 25px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 10px;
+    width: 300px;
+}
+.form .submit-btn{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,15%);
+}
+.form .submit-btn:hover{
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,25%);
+    cursor: pointer;
+}
+.form .submit-btn svg {
+    vertical-align: -3px;
+    margin-right: 3px;
+}
+
+/* whyus */
+#whyus{
+    margin-top: 450px;
+    text-align: center;
+}
+
+#whyus .item{
+    width: 30%;
+    padding: 15px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: right;
+    box-shadow: 0px 9px 19px 1px rgba(0,0,0,0.64);
+    transition: 0.25s;
+    background-color: rgba(202, 150, 19, 0.842);
+    
+   
+} 
+#whyus .item:hover{
+     
+ box-shadow: 0px 9px 23px 1px #000000;
+}
+#whyus .logo svg{
+    font-size: 40px;
+    color:rgb(4,7,80)
+}
+#whyus .title{
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px 0px;
+    
+
+}
+#whyus .desc{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+/* start customers */
+#customers .container{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/flange.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+#customers ul li{
+    display: inline-block;
+    margin-right: 80px;
+    
+}
+#customers ul li img{
+    width: 120px;
+    margin-bottom: 5px;
+    
+    
+    
+}
+#customers ul li img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#customers h2{
+    font-size: 38px;
+    padding: 20px;
+    color: #fff;
+}
+#customers h2:before{
+    content: "  .: ";
+}
+
+#customers h2:after{
+    content: "  :. ";
+}
+/* start post items */
+
+#posts .head-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 25px;
+    
+}
+#posts .post-item{
+    width: 30%;
+    height: 300px;
+    margin: 20px 15px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(14, 13, 13, 0.50) ;
+    border-radius: 5px;
+
+}
+#posts .post-image img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+}
+#posts .post-title{
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+#posts .post-title:hover{
+    color: #3a3939;
+    cursor: pointer;
+}
+
+#posts .post-date{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+#posts .read-more{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    
+}
+#posts .read-more a{
+    text-decoration: none;
+    color: #000000;
+}
+/* start footer */
+#footer {
+    background-color: #e0e0e0;
+    width: 100%;
+}
+#footer .social{
+    text-align: center;
+}
+#footer .social li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    
+}
+#footer .social li svg{
+   font-size: 30px;
+}
+#footer .social a{
+    color: #3d3d3d;
+}
+#footer .social a:hover{
+    color: #262626;
+}
+#footer .copyright{
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+}
